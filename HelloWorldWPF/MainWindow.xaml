@@ -1,0 +1,17 @@
+﻿<Window x:Class="HelloWorldWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWorldWPF"
+        mc:Ignorable="d"
+        Title="HelloWorldWPF" Height="600" Width="800">
+    <Grid Background="Black">
+        <StackPanel x:Name="prompt" Margin="144,0" Orientation="Vertical" Height="118" VerticalAlignment="Center">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Please provide your name" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+            <TextBox x:Name="nameInput" HorizontalAlignment="Center" Height="23" Margin="0,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="{x:Null}"/>
+            <Button x:Name="submitButton" Content="Submit" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Width="75" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="submitButton_Click"/>
+        </StackPanel>
+        <TextBlock x:Name="helloWorld" Margin="0" TextWrapping="Wrap" Text="Hello World!" Foreground="White" FontSize="40" TextAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed"/>
+    </Grid>
+</Window>
